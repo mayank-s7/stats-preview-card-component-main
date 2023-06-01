@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+:root{
+    --Very-dark-blue-main-background: hsl(233, 47%, 7%);
+--Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+--Soft-violet-accent: hsl(277, 64%, 61%);
+--White-main-heading-stats: hsl(0, 0%, 100%);
+--Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+--Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+
+*{
+   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    
+}
+.container
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: var(--Very-dark-blue-main-background);
+    background-color: var(--Very-dark-blue-main-background);
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    background: var(--Dark-desaturated-blue-card-background);
+    height: 400px;
+    width: 70%;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.left{
+display: flex;
+flex-direction: column;
+width: 50%;
+height: 100%;
+
+padding: 3rem;
+}
+.right img{
+    height: 0%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    margin-left:1.5rem;
+    margin-top: 2.5rem;
+}
+
+.left .header{
+    color: var(--White-main-heading-stats);
+    font-family: "Inter";
+
+}
+.left span{
+    color: var(--Soft-violet-accent);
+}
+
+.left .desc{
+    color: var(--Slightly-transparent-white-main-paragraph);
+    font-family: "Inter";
+    padding-top: 25px;
+    line-height: 22px;
+    font-size: 13px;
+    width:80%;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+    font-family: "Lexend deca";
+    text-transform: uppercase;
+    padding-top: 3rem;
+    font-size: 20px;
+
+}
+.stats .name{
+    color: var(--Slightly-transparent-white-stat-headings);
+    font-size: 10px;
+    padding-top: 5px;
+    letter-spacing: 1.5px;
+}
+.stats .number{
+    color: var(--White-main-heading-stats);
+    font-size: 120x;
+    font-weight: bold;
+}
+
+.right
+{
+height: 100%;
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+
+
+
+.card-img {
+    z-index: 3;
+    min-height: 100%;
+    background: linear-gradient(
+        0deg,
+        hsla(277, 64%, 61%, 0.5) 0%,
+        hsla(277, 64%, 61%, 0.5) 100%
+      ),
+      url(/images/image-header-desktop.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 0px 7px 7px 0px;
+  }
